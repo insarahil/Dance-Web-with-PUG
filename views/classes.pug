@@ -1,0 +1,59 @@
+html
+    head 
+        title Insa dancy Acadmy 
+        style
+            include ../static/css/style.css
+    body 
+
+        //- Navigation Bar
+        nav.navbar
+            div.title DANCE
+            ul.navbar-ul 
+            li.navbar-item 
+                a.navbar-link(href="/") HOME
+            li.navbar-item 
+                a.navbar-link(href="/about.pug") ABOUT US
+            li.navbar-item 
+                a.navbar-link(href="/dance.pug") DANCE
+            li.navbar-item 
+                a.navbar-link(href="/classes.pug") CLASSES 
+            li.navbar-item 
+                a.navbar-link(href="/contact.pug") CONTACT US
+        
+        //- Classes Sections
+        section.classes 
+            h1.classes-heading Our Classes
+            div.classesContent
+                div.classesDescription
+                   h3.hip Hip Hop Dance
+                    
+                div.classesDescription
+                    h3.bellet Ballet Dance
+                    
+                
+                div.classesDescription
+                    h3.break Break Dance
+
+                div.classesDescription
+                    h3.salsa salsa Dance
+                        
+                   
+            button.classesBtn Read More &gt; 
+        
+        //- footer
+        footer 
+            div.main-footer
+                div.dancer
+                    h2 Dancer
+                    p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+                div.address
+                    h2 Address 
+                    p  Main G T Road Gonadl Teshil & Distt Attock
+                    p  (+92) 123456789
+                    p  dance@gmail.com
+                div.newsletter
+                    h2 Newsletter 
+                    form(action="")
+                        input(type="email" name="email" placeholder="Enter Your Email")
+                        button Subscribe
+                         

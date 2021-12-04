@@ -1,0 +1,61 @@
+html
+    head 
+        title Insa dancy Acadmy 
+        style
+            include ../static/css/style.css,
+            include ../static/css/bootstrap.css
+    body 
+
+        //- Navigation Bar
+        nav.navbar
+            div.title DANCE
+            ul.navbar-ul 
+            li.navbar-item 
+                a.navbar-link(href="/") HOME
+            li.navbar-item 
+                a.navbar-link(href="/about.pug") ABOUT US
+            li.navbar-item 
+                a.navbar-link(href="/dance.pug") DANCE
+            li.navbar-item 
+                a.navbar-link(href="/classes.pug") CLASSES 
+            li.navbar-item 
+                a.navbar-link(href="/contact.pug") CONTACT US
+        
+        //- Dance Sections
+        section.dance 
+            h1.dance-heading Learn From Masters
+            div.danceContent
+                div.danceDescription
+                    img(src="../static/images/master-1.png", alt="")
+                    h3 Dance Masters
+                    p There are many variations of passages of Lorem Ipsum available, but the majority
+                div.danceContent
+                div.danceDescription.wt
+                    img(src="../static/images/master-2.png", alt="")
+                    h3 Music Lessons
+                    p There are many variations of passages of Lorem Ipsum available, but the majority
+
+                div.danceContent
+                div.danceDescription
+                    img(src="../static/images/master-3.png", alt="")
+                    h3 Skill Based Coaching
+                    p There are many variations of passages of Lorem Ipsum available, but the majority
+            button.danceBtn Read More &gt; 
+        
+        //- footer
+        footer 
+            div.main-footer
+                div.dancer
+                    h2 Dancer
+                    p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+                div.address
+                    h2 Address 
+                    p  Main G T Road Gonadl Teshil & Distt Attock
+                    p  (+92) 123456789
+                    p  dance@gmail.com
+                div.newsletter
+                    h2 Newsletter 
+                    form(action="")
+                        input(type="email" name="email" placeholder="Enter Your Email")
+                        button Subscribe
+                         

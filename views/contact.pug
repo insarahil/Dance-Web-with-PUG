@@ -1,0 +1,60 @@
+html
+    head 
+        title Insa dancy Acadmy 
+        style
+            include ../static/css/style.css
+            include ../static/css/bootstrap.css
+    body 
+
+        //- Navigation Bar
+        nav.navbar
+            div.title DANCE
+            ul.navbar-ul 
+            li.navbar-item 
+                a.navbar-link(href="/") HOME
+            li.navbar-item 
+                a.navbar-link(href="/about.pug") ABOUT US
+            li.navbar-item 
+                a.navbar-link(href="/dance.pug") DANCE
+            li.navbar-item 
+                a.navbar-link(href="/classes.pug") CLASSES 
+            li.navbar-item 
+                a.navbar-link(href="/contact.pug") CONTACT US
+        
+        //- Contact Sections
+        section.about 
+            div.alert.alert-primary.alert-dismissible 
+                p data is send to Database #{success}
+                button(type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close")
+                
+            h1.about-heading Contact Us
+           
+            div.aboutContent
+                div.aboutDescription
+                   form.contact(action="/contact" method="post") 
+                    input(type="text" name="name" placeholder="Name")
+                    input(type="email" name="email" placeholder="Email")
+                    input(type="text" name="number" placeholder="Phone Number")
+                    input(type="text" name="message" placeholder="Message")
+                    button.btn Submitt
+                  
+                div.about-image.contact-image
+                    img(src="../static/images/dance.jpg", alt="")
+        
+        //- footer
+        footer 
+            div.main-footer
+                div.dancer
+                    h2 Dancer
+                    p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+                div.address
+                    h2 Address 
+                    p  Main G T Road Gonadl Teshil & Distt Attock
+                    p  (+92) 123456789
+                    p  dance@gmail.com
+                div.newsletter
+                    h2 Newsletter 
+                    form(action="")
+                        input(type="email" name="email" placeholder="Enter Your Email")
+                        button Subscribe
+                         

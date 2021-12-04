@@ -1,0 +1,50 @@
+html
+    head 
+        title Insa dancy Acadmy 
+        style
+            include ../static/css/style.css
+    body 
+
+        //- Navigation Bar
+        nav.navbar
+            div.title DANCE
+            ul.navbar-ul 
+            li.navbar-item 
+                a.navbar-link(href="/") HOME
+            li.navbar-item 
+                a.navbar-link(href="/about.pug") ABOUT US
+            li.navbar-item 
+                a.navbar-link(href="/dance.pug") DANCE
+            li.navbar-item 
+                a.navbar-link(href="/classes.pug") CLASSES 
+            li.navbar-item 
+                a.navbar-link(href="/contact.pug") CONTACT US
+        
+        //- About Sections
+        section.about 
+            h1.about-heading About Us
+            div.aboutContent
+                div.aboutDescription
+                    h2 Break Dance
+                    p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.There are many variations of passages of Lorem Ipsum available, but the majority have sufftext.
+                    button.btn Read More &gt;
+                div.about-image
+                    img(src="../static/images/about-img.jpg", alt="")
+        
+        //- footer
+        footer 
+            div.main-footer
+                div.dancer
+                    h2 Dancer
+                    p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+                div.address
+                    h2 Address 
+                    p  Main G T Road Gonadl Teshil & Distt Attock
+                    p  (+92) 123456789
+                    p  dance@gmail.com
+                div.newsletter
+                    h2 Newsletter 
+                    form(action="")
+                        input(type="email" name="email" placeholder="Enter Your Email")
+                        button Subscribe
+                         

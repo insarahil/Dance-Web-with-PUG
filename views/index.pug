@@ -1,0 +1,49 @@
+html
+    head 
+        title Insa dancy Acadmy 
+        style
+            include ../static/css/style.css
+    body 
+
+        //- Navigation Bar
+        nav.navbar
+            div.title DANCE
+            ul.navbar-ul 
+            li.navbar-item 
+                a.navbar-link(href="/") HOME
+            li.navbar-item 
+                a.navbar-link(href="/about.pug") ABOUT US
+            li.navbar-item 
+                a.navbar-link(href="/dance.pug") DANCE
+            li.navbar-item 
+                a.navbar-link(href="/classes.pug") CLASSES 
+            li.navbar-item 
+                a.navbar-link(href="/contact.pug") CONTACT US
+        
+        //- Home Sections
+        section.main 
+            div.description
+                h1 YOU THINK
+                h1 You Can Dance What ?
+                p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
+                button.btn Read More &gt;
+            div.main-image
+                img(src="../static/images/dancer.png", alt="")
+        
+        //- footer
+        footer 
+            div.main-footer
+                div.dancer
+                    h2 Dancer
+                    p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+                div.address
+                    h2 Address 
+                    p  Main G T Road Gonadl Teshil & Distt Attock
+                    p  (+92) 123456789
+                    p  dance@gmail.com
+                div.newsletter
+                    h2 Newsletter 
+                    form(action="")
+                        input(type="email" name="email" placeholder="Enter Your Email")
+                        button Subscribe
+                         
